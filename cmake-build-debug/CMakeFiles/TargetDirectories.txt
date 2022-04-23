@@ -1,0 +1,3 @@
+C:/Users/tomya/Kaleidoscope-LLVM/cmake-build-debug/CMakeFiles/Kaleidoscope_LLVM.dir
+C:/Users/tomya/Kaleidoscope-LLVM/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/tomya/Kaleidoscope-LLVM/cmake-build-debug/CMakeFiles/rebuild_cache.dir
