@@ -1,6 +1,5 @@
-bin/parsing/parse_func.o: src/parsing/parse_func.cpp \
-  src/parsing/parse_func.hpp src/parsing/parse_types.hpp \
-  /usr/lib/llvm-10/include/llvm/ADT/APFloat.h \
+bin/parse_func.o: src/parse_func.cpp include/parse_func.hpp \
+  include/ast_types.hpp /usr/lib/llvm-10/include/llvm/ADT/APFloat.h \
   /usr/lib/llvm-10/include/llvm/ADT/APInt.h \
   /usr/lib/llvm-10/include/llvm/Support/Compiler.h \
   /usr/lib/llvm-10/include/llvm/Config/llvm-config.h \
@@ -117,11 +116,11 @@ bin/parsing/parse_func.o: src/parsing/parse_func.cpp \
   /usr/lib/llvm-10/include/llvm/Support/Threading.h \
   /usr/lib/llvm-10/include/llvm/Support/Debug.h \
   /usr/lib/llvm-10/include/llvm/Support/raw_ostream.h \
-  src/parsing/tokenizer.hpp
+  include/tokenizer.hpp
 
-src/parsing/parse_func.hpp:
+include/parse_func.hpp:
 
-src/parsing/parse_types.hpp:
+include/ast_types.hpp:
 
 /usr/lib/llvm-10/include/llvm/ADT/APFloat.h:
 
@@ -357,4 +356,4 @@ src/parsing/parse_types.hpp:
 
 /usr/lib/llvm-10/include/llvm/Support/raw_ostream.h:
 
-src/parsing/tokenizer.hpp:
+include/tokenizer.hpp:

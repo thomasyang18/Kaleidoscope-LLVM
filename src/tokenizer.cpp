@@ -59,6 +59,9 @@ int gettok() {
   int ThisChar = LastChar;
   LastChar = getchar();
   return ThisChar;
+}
 
-  return 1;
+int CurTok;
+int getNextToken() {
+  return CurTok = gettok();
 }

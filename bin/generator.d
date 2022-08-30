@@ -1,5 +1,5 @@
-bin/main.o: src/main.cpp include/generator.hpp include/ast_types.hpp \
-  /usr/lib/llvm-10/include/llvm/ADT/APFloat.h \
+bin/generator.o: src/generator.cpp include/generator.hpp \
+  include/ast_types.hpp /usr/lib/llvm-10/include/llvm/ADT/APFloat.h \
   /usr/lib/llvm-10/include/llvm/ADT/APInt.h \
   /usr/lib/llvm-10/include/llvm/Support/Compiler.h \
   /usr/lib/llvm-10/include/llvm/Config/llvm-config.h \
@@ -115,7 +115,8 @@ bin/main.o: src/main.cpp include/generator.hpp include/ast_types.hpp \
   /usr/lib/llvm-10/include/llvm/Support/RWMutex.h \
   /usr/lib/llvm-10/include/llvm/Support/Threading.h \
   /usr/lib/llvm-10/include/llvm/Support/Debug.h \
-  /usr/lib/llvm-10/include/llvm/Support/raw_ostream.h
+  /usr/lib/llvm-10/include/llvm/Support/raw_ostream.h \
+  include/parse_func.hpp include/tokenizer.hpp
 
 include/generator.hpp:
 
@@ -354,3 +355,7 @@ include/ast_types.hpp:
 /usr/lib/llvm-10/include/llvm/Support/Debug.h:
 
 /usr/lib/llvm-10/include/llvm/Support/raw_ostream.h:
+
+include/parse_func.hpp:
+
+include/tokenizer.hpp:

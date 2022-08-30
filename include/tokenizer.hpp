@@ -1,14 +1,6 @@
 #ifndef _TOKENIZER_HPP_
 #define _TOKENIZER_HPP_
 
-/*
-Wasn't keeping track of imports
-*/
-#include <cctype>
-#include <cstdio>
-#include <cstdlib>
-#include <utility>
-
 #include <string>
 
 enum Token {
@@ -25,6 +17,9 @@ enum Token {
 
 extern std::string IdentifierStr; // Filled in if tok_identifier
 extern double NumVal;             // Filled in if tok_number
+
+extern int CurTok;
+int getNextToken();
 
 int gettok();
 

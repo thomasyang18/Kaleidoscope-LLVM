@@ -1,10 +1,7 @@
-#include "parsing/parse_func.hpp"
-
-
+#include "generator.hpp"
 
 int main() {
-  InitializeModule();
+  StartInterpreter();
   // Run the main "interpreter loop" now.
-  MainLoop();
   return 0;
 }

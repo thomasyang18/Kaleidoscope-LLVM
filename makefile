@@ -1,17 +1,21 @@
-SUF = cpp
-CC = clang++
-CORE = -MMD -MP
-
-# optional flags
-LLVM = --cxxflags --ldflags --system-libs --libs core
-CFLAGS = $(CORE) -g -O3 `llvm-config $(LLVM)`
 
 #name
 TAR_NAME = kali-c
 
 SRCDIR = src
+INCDIR = include #local include directory
 OBJDIR = bin
 TARGET = $(OBJDIR)/$(TAR_NAME)
+
+#core
+SUF = cpp
+CC = clang++
+CORE = -MMD -MP  -I. -I$(INCDIR)
+
+# optional flags
+LLVM = --cxxflags --ldflags --system-libs --libs core
+CFLAGS = $(CORE) -g -O3 `llvm-config $(LLVM)`
+
 
 src = $(shell find $(SRCDIR) -name '*.$(SUF)')
 obj = $(patsubst $(SRCDIR)/%.$(SUF), $(OBJDIR)/%.o, $(src))
