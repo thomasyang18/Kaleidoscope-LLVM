@@ -3,8 +3,7 @@
 
 
 int main() {
-  InitParser();
-
+  InitializeModule();
   // Run the main "interpreter loop" now.
   MainLoop();
   return 0;

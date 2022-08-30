@@ -3,7 +3,8 @@ CC = clang++
 CORE = -MMD -MP
 
 # optional flags
-CFLAGS = $(CORE) -g -O3 `llvm-config --cxxflags` 
+LLVM = --cxxflags --ldflags --system-libs --libs core
+CFLAGS = $(CORE) -g -O3 `llvm-config $(LLVM)`
 
 #name
 TAR_NAME = kali-c

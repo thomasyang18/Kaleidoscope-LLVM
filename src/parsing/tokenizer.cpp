@@ -13,7 +13,7 @@ double NumVal;             // Filled in if tok_number
 /// gettok - Return the next token from standard input.
 int gettok() {
   static int LastChar = ' ';
-/*
+
   // Skip any whitespace.
   while (isspace(LastChar))
     LastChar = getchar();
@@ -59,6 +59,6 @@ int gettok() {
   int ThisChar = LastChar;
   LastChar = getchar();
   return ThisChar;
-*/
+
   return 1;
 }

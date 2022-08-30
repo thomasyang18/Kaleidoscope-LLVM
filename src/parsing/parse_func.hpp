@@ -2,10 +2,6 @@
 #define _PARSE_FUNC_HPP_
 
 #include "parse_types.hpp"
-/// LogError* - These are little helper functions for error handling.
-std::unique_ptr<ExprAST> LogError(const char *Str);
-std::unique_ptr<PrototypeAST> LogErrorP(const char *Str);
-
 
 std::unique_ptr<ExprAST> ParseNumberExpr();
 std::unique_ptr<ExprAST> ParseParenExpr();
@@ -21,8 +17,7 @@ std::unique_ptr<FunctionAST> ParseDefinition();
 std::unique_ptr<PrototypeAST> ParseExtern();
 std::unique_ptr<FunctionAST> ParseTopLevelExpr();
 
-
-void InitParser();
+void InitializeModule();
 void MainLoop();
 
 #endif
